@@ -1,8 +1,13 @@
+body,
+h1,
+h3{
+    margin: 0;
+}
+
 body{
     font-size: 16px;
     color: #2b283a;
     font-family: 'Roboto', sans-serif;
-    margin: 0;
 }
 
 /* typography */
@@ -10,17 +15,15 @@ body{
 h1{
     color: whitesmoke;
     font-size: 36px;
-    margin: 0;
 }
 
 h2{
-    margin: 0;
+    margin-top: 0;
 }
 
 h3{
     color: #d0aaff;
-    font-size: 20px;
-    margin:0;
+    font-size: 20px
 }
 
 /* links */
@@ -30,27 +33,28 @@ a{
     text-decoration: underline dotted; 
 }
 
-a:hover{
+a:hover, 
+a:active
+{
     color: #d4b44c;
 }
 
-a:active{
-    color: #d4b44c;
-}
 
 /* layout */
 
-header{
-    background-color: #5f29a3;
+header,
+section,
+footer{
     padding: 45px 0;
 }
 
-section{
-    padding: 45px 0;
+header,
+.section-2{
+    background-color: #5f29a3;
 }
 
 .section-2{
-    background-color: #5f29a3;
+    
     color: whitesmoke;
 }
 
@@ -72,5 +76,11 @@ section{
 .image-container{
     display: flex;
     justify-content: space-between;
+}
+
+footer{
+    text-align: center;
+    font-size: 1rem;
+    color: #5f29a3;
 }
 
